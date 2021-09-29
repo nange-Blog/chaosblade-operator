@@ -39,7 +39,7 @@ helm del --purge chaosblade-operator
 ```
 ### Helm v3
 * 在 [Release](https://github.com/chaosblade-io/chaosblade-operator/releases) 地址下载最新的 `chaosblade-operator-VERSION-v3.tgz` 包
-* 使用 `helm install chaosblade-operator chaosblade-operator-VERSION-v3.tgz --namespace kube-system` 命令安装
+* 使用 `helm3 install chaosblade-operator chaosblade-operator-VERSION-v3.tgz --namespace kube-system` 命令安装
 * 使用 `kubectl get pod -l part-of=chaosblade -n kube-system` 查看 Pod 的安装状态，如果都是 running 状态，说明安装成功
 * 使用以下命令卸载，注意执行顺序:
 ```shell script
